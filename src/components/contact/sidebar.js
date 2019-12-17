@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../styles/sidebar.scss'
+import './styles/sidebar.scss'
 
 import linkedIn from './images/linkedin.png'
 import github from './images/github.png'
