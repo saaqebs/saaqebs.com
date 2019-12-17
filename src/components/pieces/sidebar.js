@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles/sidebar.scss'
 
 class Sidebar extends Component {
 

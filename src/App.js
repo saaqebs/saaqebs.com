@@ -7,6 +7,8 @@ import './styles/homepage.scss';
 import './styles/projects.scss'
 import './styles/intro.scss'
 import './styles/button.css'
+import './styles/contact.scss'
+import './styles/sidebar.scss'
 
 import Intro from './components/pieces/intro';
 import Homepage from './components/content/homepage';

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles/contact.scss'
 
 class ContactBar extends Component {
   render() {
