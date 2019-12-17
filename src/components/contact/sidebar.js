@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import '../../styles/sidebar.scss'
+
+import linkedIn from './images/linkedin.png'
+import github from './images/github.png'
+import mail from './images/mail.png'
+
 class Sidebar extends Component {
 
   render() {
@@ -10,17 +16,17 @@ class Sidebar extends Component {
             <ul>
               <li id="li">
                 <a href="https://www.linkedin.com/in/saaqeb/">
-                  <img src={"contact-pics/linkedin.png"} height={35} width={35} />
+                  <img src={linkedIn} height={35} width={35} />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/saaqebs">
-                  <img src={"contact-pics/github.png"} height={37} width={37} />
+                  <img src={github} height={37} width={37} />
                 </a>
               </li>
               <li>
                 <a href="mailto:asksaaqeb@gmail.com">
-                  <img src={"contact-pics/mail.png"} height={27} width={37} />
+                  <img src={mail} height={27} width={37} />
                 </a>
               </li>
             </ul>
