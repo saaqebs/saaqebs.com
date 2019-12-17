@@ -1,0 +1,44 @@
+
+.sidebar {
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  left: 3vh;
+  width: 60px;
+  height: 233px;
+  background-color: white;
+  text-align: center;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+
+  -moz-border-radius: 27px;
+  -webkit-border-radius: 27px;
+  border-radius: 27px;
+
+  #sidebar {
+    margin: 0;
+    div {
+      ul {
+        top: 32px;
+        padding: 0;
+        list-style:outside none none;
+        li {
+          opacity: 0.7;
+          filter: alpha(opacity=70);
+          margin-bottom: 30px;
+        }
+        li:hover {
+          opacity: 2;
+          filter: alpha(opacity=200);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .sidebar {
+    display: none;
+  }
+}
