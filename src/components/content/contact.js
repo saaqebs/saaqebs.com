@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-import ContactBar from '../pieces/contact_bar'
+import ContactBar from '../contact/contact_bar'
 // import ContactForm from '../pieces/contact_form'
-
 
 class Contact extends Component {
   render() {
@@ -11,7 +10,7 @@ class Contact extends Component {
         <div className="contact-contain vertical-center-parent">
         <h2>Let's get in touch.</h2>
           <ContactBar />
-          {/*}<ContactForm />*/}
+          {/*<ContactForm />*/}
         </div>
       </section>
     );
