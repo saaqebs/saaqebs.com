@@ -16,17 +16,17 @@ class Sidebar extends Component {
             <ul>
               <li id="li">
                 <a href="https://www.linkedin.com/in/saaqeb/">
-                  <img src={linkedIn} height={35} width={35} />
+                  <img src={linkedIn} height={35} width={35} alt="In" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/saaqebs">
-                  <img src={github} height={37} width={37} />
+                  <img src={github} height={37} width={37} alt="Git" />
                 </a>
               </li>
               <li>
                 <a href="mailto:asksaaqeb@gmail.com">
-                  <img src={mail} height={27} width={37} />
+                  <img src={mail} height={27} width={37} alt="Mail" />
                 </a>
               </li>
             </ul>

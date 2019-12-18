@@ -3,11 +3,14 @@
  * Visit his codepen: https://codepen.io/chrisoncode
  */
 
+.get-in-touch {
+  margin-left: 20px;
+}
 
 .contact-bar {
   height: 96px;
   width: 100%;
-  left: 2%;
+  left: 7%;
 
   span {
     margin: 20px 30px 20px 20px;
@@ -22,6 +25,10 @@
 
 .form {
   margin-left: 25px;
+}
+
+.error {
+  display: none;
 }
 
 .contact {
@@ -75,6 +82,7 @@ h2 {
   position:relative;
   margin-bottom:45px;
 }
+
 input {
   font-size:18px;
   padding:10px 10px 10px 5px;
