@@ -5,13 +5,27 @@ import './styles/contact.scss'
 
 
 class ContactForm extends Component {
-  validateForm = (event) => {
-    let name = event.target.name;
-    console.log(name);
-    let email = event.target.email;
-    console.log(email);
-    let message = event.target.message;
-    console.log(message);
+  constructor(props){
+    super(props);
+    this.state = {name: '', email: '', message: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      name: event.target.name || '',
+      email: event.target.email || '',
+      message: event.target.message || '',
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state.name);
+    console.log(this.state.email);
+    console.log(this.state.message);
   }
 
   render() {
@@ -19,7 +33,7 @@ class ContactForm extends Component {
       <div className="form">
         <form noValidate id="form" onSubmit={this.validateForm}>
           <div className="group form-group">
-            <input type="text" id="name" required />
+            <input type="text" value={this.state.name} onChange={this.handleChange} />
             <span className="highlight" />
             <span className="bar" />
             <label>Name</label>
@@ -28,7 +42,7 @@ class ContactForm extends Component {
             </section>
           </div>
           <div className="group">
-            <input type="email" id="email" required />
+            <input type="email" value={this.state.email} onChange={this.handleChange} />
             <span className="highlight" />
             <span className="bar" />
             <label>Email</label>
@@ -37,7 +51,7 @@ class ContactForm extends Component {
             </section>
           </div>
           <div className="group">
-            <input type="text" id="message" required />
+            <input type="text" value={this.state.message} onChange={this.handleChange} />
             <span className="highlight" />
             <span className="bar" />
             <label>Message</label>
