@@ -3,14 +3,9 @@
  * Visit his codepen: https://codepen.io/chrisoncode
  */
 
-.get-in-touch {
-  margin-left: 20px;
-}
-
 .contact-bar {
   height: 96px;
-  width: 100%;
-  left: 2%;
+  margin: 0 auto;
 
   span {
     margin: 20px 30px 20px 20px;
@@ -39,28 +34,24 @@
 }
 
 .contact-contain {
-  float: right;
-  margin: auto 0;
-  display: block;
-  left: 40%;
+  margin: 0 auto;
+  width: 270px;
+  display: absolute;
+  top: 40%;       // change this when working with the form
 }
 
-h2 {
+.contact-contain h2 {
   text-align: center;
   margin-bottom:50px;
   color: #D0D0D0;
 }
 
 @media screen and (max-width: 700px){
-  .contact-contain {
-    left: 0;
-  }
+  
 }
 
 @media screen and (max-width: 343px){
-  .contact-bar span {
-      margin: 20px 10px 20px 20px;
-  }
+
 }
 
 .submit {
@@ -83,7 +74,7 @@ h2 {
   margin-bottom:45px;
 }
 
-input {
+.form input {
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -91,22 +82,22 @@ input {
   border:none;
   border-bottom:1px solid #fff;
 }
-input[type=text] {
+.form input[type=text] {
   background-color: inherit;
   color: white;
 }
 
-input[type=email] {
+.form input[type=email] {
   background-color: inherit;
   color: white;
 }
 
-input:focus {
+.form input:focus {
   outline:none;
 }
 
 /* LABEL ======================================= */
-label {
+.form label {
   color:#fff;
   font-size:18px;
   font-weight:normal;
@@ -120,13 +111,13 @@ label {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label {
+.form input:focus ~ label, input:valid ~ label {
   top:-20px;
   font-size:14px;
   color:#D0D0D0;
 }
 
-input:focus ~ label, input:invalid ~ label {
+.form input:focus ~ label, input:invalid ~ label {
   top:-20px;
   font-size:14px;
   color:#D0D0D0;
@@ -156,12 +147,12 @@ input:focus ~ label, input:invalid ~ label {
   right:50%;
 }
 
-input:not(input:empty) ~ .bar, input:invalid ~ .bar {
+.form input:not(input:empty) ~ .bar, input:invalid ~ .bar {
   background: red;
 }
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+.form input:focus ~ .bar:before, input:focus ~ .bar:after {
   width:50%;
 }
 
@@ -175,24 +166,3 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   pointer-events:none;
   opacity:0.5;
 }
-
-// /* active state */
-// input:focus ~ .highlight {
-//   -webkit-animation:inputHighlighter 0.3s ease;
-//   -moz-animation:inputHighlighter 0.3s ease;
-//   animation:inputHighlighter 0.3s ease;
-// }
-
-// /* ANIMATIONS ================ */
-// @-webkit-keyframes inputHighlighter {
-// 	from { background:#D0D0D0; }
-//   to 	{ width:0; background:transparent; }
-// }
-// @-moz-keyframes inputHighlighter {
-// 	from { background:#D0D0D0; }
-//   to 	{ width:0; background:transparent; }
-// }
-// @keyframes inputHighlighter {
-// 	from { background:#D0D0D0; }
-//   to 	{ width:0; background:transparent; }
-// }

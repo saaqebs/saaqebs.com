@@ -9,7 +9,7 @@ import mail from './images/mail2.png'
 class ContactBar extends Component {
   render() {
     return (
-      <div className="get-in-touch">
+      <div>
         <h2>Let's get in touch.</h2>
         <div className="contact-bar">
           <span>

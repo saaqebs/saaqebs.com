@@ -7,7 +7,7 @@ class Contact extends Component {
   render() {
     return (
       <section className="contact">
-        <div className="contact-contain vertical-center-parent">
+        <div className="contact-contain">
           <ContactBar />
           {/*<ContactForm />*/}
         </div>

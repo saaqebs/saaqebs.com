@@ -1,0 +1,13 @@
+{
+  "name": "Saaqeb Siddiqi",
+  "short_name": "Saaqeb",
+  "icons": [{
+        "src": "favicon.png",
+        "sizes": "64x64",
+        "type": "image/webp"
+      }],
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape"
+}

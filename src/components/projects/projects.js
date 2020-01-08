@@ -10,52 +10,52 @@ class Projects extends Component {
         <h1 className="handiwork"> Some of my handiwork. </h1>
         <div className="portfolio">
           <div>
-            <ul class="cards">
+            <ul className="cards">
 
-              <li class="cards__item">
-                <div class="card">
-                  <div class="card__image card__image--fence"></div>
-                  <div class="card__content">
-                    <div class="card__title">Flex</div>
-                    <p class="card__text">
+              <li className="cards__item">
+                <div className="card">
+                  <div className="card__image card__image--fence"></div>
+                  <div className="card__content">
+                    <div className="card__title">Flex</div>
+                    <p className="card__text">
                       This is the shorthand for flex-grow, flex-shrink and
                       flex-basis combined. The second and third parameters
                       (flex-shrink and flex-basis) are optional. Default is 0 1
                       auto.
                     </p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <button className="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
               </li>
 
-              <li class="cards__item">
-                <div class="card">
-                  <div class="card__image card__image--fence"></div>
-                  <div class="card__content">
-                    <div class="card__title">Flex</div>
-                    <p class="card__text">
+              <li className="cards__item">
+                <div className="card">
+                  <div className="card__image card__image--fence"></div>
+                  <div className="card__content">
+                    <div className="card__title">Flex</div>
+                    <p className="card__text">
                       This is the shorthand for flex-grow, flex-shrink and
                       flex-basis combined. The second and third parameters
                       (flex-shrink and flex-basis) are optional. Default is 0 1
                       auto.
                     </p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <button className="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
               </li>
 
-              <li class="cards__item">
-                <div class="card">
-                  <div class="card__image card__image--fence"></div>
-                  <div class="card__content">
-                    <div class="card__title">Flex</div>
-                    <p class="card__text">
+              <li className="cards__item">
+                <div className="card">
+                  <div className="card__image card__image--fence"></div>
+                  <div className="card__content">
+                    <div className="card__title">Flex</div>
+                    <p className="card__text">
                       This is the shorthand for flex-grow, flex-shrink and
                       flex-basis combined. The second and third parameters
                       (flex-shrink and flex-basis) are optional. Default is 0 1
                       auto.
                     </p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <button className="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
               </li>
