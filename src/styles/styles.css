@@ -41,3 +41,7 @@ html,body {
   top: 55%;
   transform: translateY(-50%);
 }
+
+.hidden {
+  display: none;
+}
