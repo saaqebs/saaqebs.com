@@ -1,15 +1,146 @@
-/*
- * CSS Code skeleton by Tyrell Rummage, editted by Saaqeb.
- * Visit his codepen: https://codepen.io/tyrellrummage
- */
 
- #port {
-   font-size: 54px;
-   font-weight: normal;
-   top: 72px;
-   text-align: center;
-   color: #2f2f2f;
- }
+
+.wrapper {
+  background-color: #f0f0f0;
+  z-index: 4;
+  // height: 100vh;
+  padding-bottom: 200px;
+}
+
+.portfolio {
+  width: 1000px;
+  left: 100px;
+  color: #999999;
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  //border-radius: 1rem;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 53rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  //filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+	  display: block;
+    padding-top: 56.25%; // 16:9 aspect ratio
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%; // 3:2 aspect ratio
+    }
+  }
+}
+
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+
+
+
+
 
 .wrapper {
   // background-color: #D0D0D0;
@@ -17,208 +148,38 @@
 
 .portfolio {
   top: 96px;
-
-  ul {
-    margin-left: calc(9vh + 92px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-    li {
-      width: 400px; // width between cards
-      margin: 1rem;
-      cursor: pointer;
-      list-style: outside none none;
-
-      span {
-        letter-spacing: 3px;
-      }
-
-      .container {
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-        -webkit-perspective: 1000px;
-                perspective: 1000px;
-        width: 400px;
-
-        .front,.back {
-          background-size: cover;
-          background-position: center;
-          -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          -webkit-backface-visibility: hidden;
-                  backface-visibility: hidden;
-          text-align: center;
-          min-height: 280px;
-          height: auto;
-          border-radius: 10px;
-          color: #fff;
-          font-size: 1.5rem;
-        }
-
-        .front {
-            -webkit-transform: rotateY(0deg);
-                    transform: rotateY(0deg);
-            -webkit-transform-style: preserve-3d;
-                    transform-style: preserve-3d;
-
-            .inner p {
-              font-size: 2rem;
-              margin-bottom: 2rem;
-              position: relative;
-              letter-spacing: 1.5px;
-            }
-
-            .inner p:after {
-              content: '';
-              width: 4rem;
-              height: 2px;
-              position: absolute;
-              background: #C6D4DF;
-              display: block;
-              left: 0;
-              right: 0;
-              margin: 0 auto;
-              bottom: -.75rem;
-            }
-
-            .inner span{
-              color: rgba(255,255,255,0.7);
-              font-family: 'Montserrat';
-              font-weight: 300;
-            }
-        }
-
-        .back {
-          background: #cedce7;
-          background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-          background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-          background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          -webkit-transform: rotateY(180deg);
-                  transform: rotateY(180deg);
-          -webkit-transform-style: preserve-3d;
-                  transform-style: preserve-3d;
-          p {
-            font-size: 1.1rem;
-          }
-
-          #github {
-            font-family: 'Manjari', sans-serif;
-            top: 26px;
-          }
-        }
-
-        .front:after {
-          position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            content: '';
-            display: block;
-            opacity: 0.65;
-            background-color: #000;
-            -webkit-backface-visibility: hidden;
-                    backface-visibility: hidden;
-            border-radius: 10px;
-        }
-
-        .inner {
-            -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-                    transform: translateY(-50%) translateZ(60px) scale(0.94);
-            top: 50%;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            padding: 2rem;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            outline: 1px solid transparent;
-            -webkit-perspective: inherit;
-                    perspective: inherit;
-            z-index: 2;
-        }
-      }
-
-      .container:hover .front,
-      .container:hover .back {
-          -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-          transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-      }
-
-      .container:hover .back{
-        -webkit-transform: rotateY(0deg);
-                transform: rotateY(0deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-      }
-
-      .container:hover .front{
-        -webkit-transform: rotateY(-180deg);
-                transform: rotateY(-180deg);
-        -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1024px){
-  .portfolio ul {
-    margin-left: 4vw;
+  .portfolio {
 
-    li .container {
-      width: 10vh;
-    }
   }
 }
 
 @media screen and (max-width: 768px){
-  .portfolio ul {
-    margin-left: 9vw;
-    li .container {
-      width: 30vh;
-    }
+  .portfolio {
+    left: 0px;
   }
 }
 
 @media screen and (max-width: 425px){
   .portfolio {
-    ul {
-      margin: 0 0 0 0;
-      li .container {
-        width: 39vh;
-      }
-    }
+    left: 0px;
   }
 }
 
 @media screen and (width:375px) and (height:812px) {
   .portfolio {
-    ul {
-      margin: 0 0 0 0;
-      right: 16px;
-      li .container {
-        width: 39vh;
-      }
-    }
+
   }
+}
+
+.handiwork {
+  font-size: 54px;
+  font-weight: normal;
+  top: 72px;
+  text-align: center;
+  color: #2f2f2f;
 }
 
 #chess {

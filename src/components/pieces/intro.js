@@ -12,7 +12,7 @@ class Intro extends Component {
               <p className="noselect">
                 Hello, my name is Saaqeb! I am a junior at
                 Cornell studying Information Science. I like
-                designing all sorts of software and hardware applications.
+                designing and analyzing all sorts of software applications.
               </p>
               <p> Take a look at some of my projects below! </p>
               <div className="button-position">

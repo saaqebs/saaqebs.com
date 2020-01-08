@@ -7,84 +7,61 @@ class Projects extends Component {
   render() {
     return (
       <div className="wrapper">
-        <div className="portfolio" id="portfolio">
-          <ul>
-            <li>
-              <div className="container">
-                <div className="front" id="chess">
-                  <div className="inner">
-                    <p>Chess</p>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <p>
-                      A project my team and I built for CS 3110 that includes an
-                      easy and hard AI to play against. Built using OCaml, the
-                      best programming language in the world!
+        <h1 className="handiwork"> Some of my handiwork. </h1>
+        <div className="portfolio">
+          <div>
+            <ul class="cards">
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">Flex</div>
+                    <p class="card__text">
+                      This is the shorthand for flex-grow, flex-shrink and
+                      flex-basis combined. The second and third parameters
+                      (flex-shrink and flex-basis) are optional. Default is 0 1
+                      auto.
                     </p>
-                    <a className="btn btn-secondary" id="github" href="https://github.com/saaqebs/Chess" role="button">github</a>
+                    <button class="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div className="container">
-                <div className="front" id="search-engine">
-                  <div className="inner">
-                    <p>Little Search Engine</p>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <p>
-                      Imagine Google but at a smaller and local scale. Could
-                      read many text documents and return the top 5 most
-                      popular documents based on keywords.
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">Flex</div>
+                    <p class="card__text">
+                      This is the shorthand for flex-grow, flex-shrink and
+                      flex-basis combined. The second and third parameters
+                      (flex-shrink and flex-basis) are optional. Default is 0 1
+                      auto.
                     </p>
-                    <a className="btn btn-secondary" id="github" href="https://github.com/saaqebs/Data-Structures/tree/master/Little%20Search%20Engine" role="button">github</a>
+                    <button class="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div className="container">
-                <div className="front" id="tic-tac-toe">
-                  <div className="inner">
-                    <p>Tic-Tac-Toe</p>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <p>
-                      A game that I used to introduce middle and high school
-                      kids to Java and object-oriented programming.
+              </li>
+
+              <li class="cards__item">
+                <div class="card">
+                  <div class="card__image card__image--fence"></div>
+                  <div class="card__content">
+                    <div class="card__title">Flex</div>
+                    <p class="card__text">
+                      This is the shorthand for flex-grow, flex-shrink and
+                      flex-basis combined. The second and third parameters
+                      (flex-shrink and flex-basis) are optional. Default is 0 1
+                      auto.
                     </p>
-                    <a className="btn btn-secondary" id="github" href="https://github.com/saaqebs/TicTacToe" role="button">github</a>
+                    <button class="btn btn--block card__btn">Button</button>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div className="container">
-                <div className="front" id="unsplash">
-                  <div className="inner">
-                    <p>Wallpaper Updater</p>
-                  </div>
-                </div>
-                <div className="back">
-                  <div className="inner">
-                    <p>
-                      A program that updates the wallpaper for MacOS everyday.
-                      It utilizes Unsplash's API since they have a large
-                      dataset of pictures. You could download and use it today!
-                    </p>
-                    <a className="btn btn-secondary" id="github" href="https://github.com/saaqebs/wallpaper-updater-macos" role="button">github</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+
+            </ul>
+          </div>
         </div>
       </div>
     );

@@ -9,7 +9,7 @@ class Contact extends Component {
       <section className="contact">
         <div className="contact-contain vertical-center-parent">
           <ContactBar />
-          <ContactForm />
+          {/*<ContactForm />*/}
         </div>
       </section>
     );

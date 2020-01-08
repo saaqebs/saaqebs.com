@@ -22,10 +22,7 @@ function App() {
           <Intro />
           <Homepage />
         </div>
-        <div>
-          <h1 id="port"> Some of my handiwork. </h1>
-          <Projects id="portfolio" />
-        </div>
+        <Projects />
       </div>
       <div>
         <Contact />
