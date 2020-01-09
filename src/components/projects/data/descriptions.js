@@ -2,7 +2,7 @@ const projectList = [
   {
     id: 0,
     name: "Chess",
-    description: "A project my team and I built for CS 3110 that includes an easy and hard AI to play against. Built using the functional programming in OCaml, the best programming language in the world!",
+    description: "A project my team and I built for CS 3110 that includes an easy and hard AI to play against. Built using OCaml, the best programming language in the world!",
     image: require("../images/chess.jpeg"),
     github: "https://github.com/saaqebs/Chess",
   },
@@ -16,7 +16,7 @@ const projectList = [
   {
     id: 2,
     name: "Tic Tac Toe",
-    description: "A simple fun game that I used to introduce middle and high school kids to programming Java and object-oriented programming.",
+    description: "A simple fun game that I used to introduce programming in Java to middle and high school kids. Build using object-oriented programming concepts.",
     image: require("../images/tictactoe.jpg"),
     github: "https://github.com/saaqebs/TicTacToe",
   },

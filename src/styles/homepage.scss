@@ -4,7 +4,7 @@
   background-position: 20% 50%;
   background-position-x: 20%;
   background-position-y: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,3 +17,9 @@
   width: 100%;
   background-position: 12%;
 }
+
+// @media screen and (max-width:900px) {
+//   .homepage {
+//     background-attachment: scroll;
+//   }
+// }

@@ -10,7 +10,7 @@ class ProjectsPage extends Component {
     return (
       <div className="wrapper">
         <h1 className="handiwork"> Some of my handiwork. </h1>
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
           <div>
             <Projects projects={projectList}/>
           </div>
