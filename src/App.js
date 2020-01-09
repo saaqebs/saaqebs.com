@@ -10,7 +10,7 @@ import './styles/button.css'
 import Intro from './components/pieces/intro';
 import Homepage from './components/content/homepage';
 import Sidebar from './components/contact/sidebar';
-import Projects from './components/projects/projects'
+import ProjectsPage from './components/projects/projects'
 import Contact from './components/content/contact'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Intro />
           <Homepage />
         </div>
-        <Projects />
+        <ProjectsPage />
       </div>
       <div>
         <Contact />
