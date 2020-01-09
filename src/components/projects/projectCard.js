@@ -16,11 +16,11 @@ class ProjectCard extends React.Component {
             <p className="card__text">
               {this.props.project.description}
             </p>
-            <button className="btn btn--block card__btn">
-              <a href={this.props.project.github}>
+            <a className="git_link" href={this.props.project.github}>
+              <button className="btn btn--block card__btn">
                 Github
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </li>

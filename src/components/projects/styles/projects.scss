@@ -3,16 +3,16 @@
 .wrapper {
   background-color: #f0f0f0;
   z-index: 4;
-  // height: 100vh;
   text-align: center;
   padding-bottom: 200px;
 }
 
 .portfolio {
+  margin: 0 auto;
   top: 96px;
-  width: 88%;
-  left: 90px;
-  color: #999999;
+  width: 830px;
+  // left: 90px;
+  color: #696969;
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,6 +30,10 @@
   }
 }
 
+.git_link:hover {
+  text-decoration: none;
+}
+
 .btn {
   background-color: white;
   border: 1px solid #cccccc;
@@ -37,6 +41,11 @@
   color: #696969;
   padding: 0.5rem;
   text-transform: lowercase;
+}
+
+.btn:hover {
+  background-color: #5b5b5b;
+  color: white;
 }
 
 .btn--block {
@@ -58,9 +67,9 @@
   @media(min-width: 40rem) {
     width: 48%;
   }
-  @media(min-width: 59rem) {
-    width: 33.3333%;
-  }
+  // @media(min-width: 59rem) {
+  //   width: 33.3333%;
+  // }
 }
 
 .card {
@@ -107,24 +116,8 @@
   }
 }
 
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
-}
-
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
-}
-
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
-}
-
-.card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
-}
-
 .card__title {
-  color: #696969;
+  color: black;
   font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: 2px;
@@ -138,16 +131,16 @@
   margin-bottom: 1.25rem;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
   .portfolio {
-
+    width: 88%;
+    left: 5%;
   }
 }
 
 @media screen and (max-width: 768px){
   .portfolio {
-    left: 0px;
-    margin: 0 auto;
+    left: 0;
   }
 }
 
