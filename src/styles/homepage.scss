@@ -1,7 +1,9 @@
 
 .homepage {
   background-image: url("/background/background.jpeg");
-  background-position: center center;
+  background-position: 20% 50%;
+  background-position-x: 20%;
+  background-position-y: center;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;

@@ -102,5 +102,6 @@
 	  float: inherit;
 	  top: 4vh;
 	  z-index: 3;
+		/* display: none; */
 	}
 }
