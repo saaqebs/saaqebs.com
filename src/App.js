@@ -3,23 +3,20 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 // import css file from scss
-import './styles/styles.css'
-import './styles/homepage.scss';
-import './styles/intro.scss'
-import './styles/button.css'
+import './styles/styles.css';
 
-import Intro from './components/pieces/intro';
-import Homepage from './components/content/homepage';
+import Intro from './components/homepage/intro';
+import Homepage from './components/homepage/homepage';
 import Sidebar from './components/contact/sidebar';
-import ProjectsPage from './components/projects/projects'
-import Contact from './components/content/contact'
+import ProjectsPage from './components/projects/projects';
+import Contact from './components/contact/contact';
 
 function App() {
   return (
     <div>
       <div>
         <Sidebar />
-        <div>
+        <div className="front">
           <Intro />
           <Homepage />
         </div>

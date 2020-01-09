@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import './styles/intro.scss';
+import './styles/button.css';
+
 class Intro extends Component {
   render() {
     return (
