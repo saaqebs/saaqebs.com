@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './styles/homepage.scss';
 
 
-class Homepage extends Component {
+class Background extends Component {
   render() {
     return (
       <div className="homepage">
@@ -13,4 +13,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default Background;
