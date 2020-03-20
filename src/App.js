@@ -1,8 +1,6 @@
-
 import React from 'react';
 
-// import css file from scss
-import './styles.css';
+import './styles.css';    // import css file from scss
 
 import Homepage from './pages/home/homepage';
 

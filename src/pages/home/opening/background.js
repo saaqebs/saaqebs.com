@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import './styles/homepage.scss';
+import styles from './styles/homepage.module.scss';
 
 
 class Background extends Component {
   render() {
     return (
-      <div className="homepage">
+      <div className={styles.homepage}>
         {/* Get Rekt */}
       </div>
     );
