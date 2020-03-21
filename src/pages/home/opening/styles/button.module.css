@@ -97,8 +97,8 @@
 
 
 @media screen and (max-width:600px) {
-	.button-position {
-	  right: 40%;
+	.button_position {
+		right: 43%;
 	  float: inherit;
 	  top: 4vh;
 	  z-index: 3;
