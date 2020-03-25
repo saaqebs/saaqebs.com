@@ -1,0 +1,157 @@
+
+a {
+  color: rgb(70, 70, 70);
+}
+
+a:hover {
+  color: black;
+}
+
+.navbar {
+  position: fixed;
+  float: right;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  font-family: "Arial";
+  z-index: 1;
+}
+
+.navbar p {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.propic {
+  width: 60px;
+}
+
+.searchbutton {
+  padding: 7px 40px;
+  font: Arial;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  background-color: #d9d9d9;
+  color: #555555;
+  /* outline: none; */
+  border-radius: 8px;
+}
+
+.searchbutton:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.horizontal {
+  text-align: center;
+}
+
+.padding_top {
+  padding-top: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  padding-top: 170px;
+  width: 500px;
+}
+
+.container p {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  color: rgb(24,26,39);
+  font-size: 50px;
+  padding-top: 140px;
+  font-family: 'Montserrat';
+  font-style: italic;
+}
+
+.explanation {
+  padding-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+}
+
+.explanation h1 {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.explanation p {
+  font-size: 15px;
+  text-align: left;
+  text-align: center;
+}
+
+#searchbar {
+  border-radius: 20px;
+  border: 1px solid #E0E0E0;
+  padding: 10px;
+  width: 500px;
+  height: 43px;
+  font: Arial;
+  font-size: 18px;
+  background-color:transparent;
+  color:rgba(0,0,0,.87);
+  word-wrap:break-word;
+}
+
+#searchbar:focus {
+  outline: none;
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#searchbar:hover {
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+@media only screen and (max-width: 767px){
+
+  .navbar p {
+    font-size: 15px;
+  }
+
+  #searchbar {
+    width: 85%;
+    height: 600%;
+    font-size: 200%;
+    margin-top: 5%;
+  }
+
+  .searchbutton {
+    font-size: 150%;
+    margin-top: 5%;
+  }
+
+  .container img {
+    padding-top: 50%;
+    width: 95%;
+  }
+
+  .container p {
+    font-size: 40px;
+    padding-top: 42%;
+  }
+  
+  .explanation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 370px){
+  .navbar .email {
+    display: none;
+  }
+}
