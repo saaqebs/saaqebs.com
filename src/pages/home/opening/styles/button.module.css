@@ -96,9 +96,9 @@
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:767px) {
 	.button_position {
-		right: 43%;
+		right: 43vw;
 	  float: inherit;
 	  top: 4vh;
 	  z-index: 3;
