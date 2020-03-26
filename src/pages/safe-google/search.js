@@ -22,14 +22,12 @@ function Head(props) {
       <meta property="og:url" content="https://saaqebs.com/search" />
       <meta property="og:title" content="Safer Google" />
       <meta property="og:description" content={content} />
-      <meta property="og:image" content={logo} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://saaqebs.com/search" />
       <meta property="twitter:title" content="Safer Google" />
       <meta property="twitter:description" content={content} />
-      <meta property="twitter:image" content={logo} />
 
       <script src="./script/script.js"> </script>
     </Helmet>
