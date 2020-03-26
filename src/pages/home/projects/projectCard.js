@@ -8,7 +8,7 @@ class ProjectCard extends React.Component {
       <li className="cards__item">
         <div className="card">
           <div className="card__image"
-              style={{ backgroundImage: `url(${this.props.project.image})` }} />
+            style={{ backgroundImage: `url(${this.props.project.image})` }} />
           <div className="card__content">
             <div className="card__title">
               {this.props.project.name}
@@ -30,7 +30,7 @@ class ProjectCard extends React.Component {
 
 class Projects extends React.Component {
   render() {
-    console.log(this.props.projects[0]);
+    // console.log(this.props.projects[0]);
     return (
       <ul className="cards">
         {this.props.projects.map((project) =>

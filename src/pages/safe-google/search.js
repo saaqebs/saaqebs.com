@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
+import Helmet from 'react-helmet';
 
 import style from './styles/style.module.css';
 import google from './images/google.png';
 import propic from './images/propic.png';
 import logo from './images/logo.png';
 
-const content = "When you normally use Google search, you send invasive ad information such as location and web browser data to Google. \
-This website conducts a normal Google search query without sending any extra and invasive information!"
+const content = "When you normally use Google search, you send invasive ad information such as location and web browser data to Google. This website conducts a normal Google search query without sending any extra and invasive information!";
 
 
 function Head(props) {
   return (
-    <MetaTags>
+    <Helmet>
       {/* Primary Meta Tags */}
       <title>Safer Google</title>
       <meta name="title" content="Safer Google" />
@@ -33,7 +32,7 @@ function Head(props) {
       <meta property="twitter:image" content={logo} />
 
       <script src="./script/script.js"> </script>
-    </MetaTags>
+    </Helmet>
   );
 }
 
@@ -42,8 +41,8 @@ function SearchForm(props) {
     <form action="https://www.google.com/search?">
       <input name="hl" type="hidden" value="en" />
       <div className={style.padding_top}>
-        <input name="q" type="text" autocomplete="off" id={style.searchbar}
-          autofocus="autofocus" required onFocus="this.select()" maxlength="2048" minlength="1" />
+        <input name="q" type="text" autoComplete="off" id={style.searchbar}
+          autoFocus="autofocus" required maxLength="2048" minLength="1" />
       </div>
 
       <div className={style.padding_top}>
@@ -92,14 +91,14 @@ function Nav(props) {
 
 function Body(props) {
   return (
-    <body>
+    <main className="noselect">
       <Nav />
       <div className={style.horizontal}>
         <Logo />
         <SearchForm />
         <Explanation />
       </div>
-    </body>
+    </main>
   )
 }
 
@@ -107,10 +106,10 @@ function Body(props) {
 class Search extends Component {
   render() {
     return (
-      <html lang="en">
+      <div lang="en">
         <Head />
         <Body />
-      </html>
+      </div>
     );
   }
 }
