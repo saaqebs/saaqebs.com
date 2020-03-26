@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import './styles.css';    // import css file from scss
 
@@ -11,8 +11,9 @@ function App() {
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/" component={Homepage} exact/>
-          <Route path="/search" component={Search}/>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/search" component={Search} />
+          <Redirect to="/" />
         </Switch>
       </div>
     </BrowserRouter>

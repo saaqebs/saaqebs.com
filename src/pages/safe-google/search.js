@@ -7,17 +7,15 @@ import propic from './images/propic.png';
 
 function Head(props) {
   return (
-    <head>
-      <Helmet>
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="shortcut icon" type="image/x-icon" href="./images/google.jng" />
-        <meta charset="utf-8" />
-        <meta name="author" content="Saaqeb Siddiqi" />
+    <Helmet>
+      <link rel="stylesheet" href="./styles/style.css" />
+      <link rel="shortcut icon" type="image/x-icon" href="./images/google.jng" />
+      <meta charset="utf-8" />
+      <meta name="author" content="Saaqeb Siddiqi" />
 
-        <title> Safe Google </title>
-        <script src="./script/script.js"> </script>
-      </Helmet>
-    </head>
+      <title> Safe Google </title>
+      <script src="./script/script.js"> </script>
+    </Helmet>
   );
 }
 
