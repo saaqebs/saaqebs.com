@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
+import MetaTags from 'react-meta-tags';
 
 import style from './styles/style.module.css';
 import google from './images/google.png';
 import propic from './images/propic.png';
+import logo from './images/logo.png';
+
+const content = "When you normally use Google search, you send invasive ad information such as location and web browser data to Google. \
+This website conducts a normal Google search query without sending any extra and invasive information!"
+
 
 function Head(props) {
   return (
-    <Helmet>
-      <link rel="stylesheet" href="./styles/style.css" />
-      <link rel="shortcut icon" type="image/x-icon" href="./images/google.jng" />
-      <meta charset="utf-8" />
-      <meta name="author" content="Saaqeb Siddiqi" />
+    <MetaTags>
+      {/* Primary Meta Tags */}
+      <title>Safer Google</title>
+      <meta name="title" content="Safer Google" />
+      <meta name="description" content={content} />
 
-      <title> Safe Google </title>
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://saaqebs.com/search" />
+      <meta property="og:title" content="Safer Google" />
+      <meta property="og:description" content={content} />
+      <meta property="og:image" content={logo} />
+
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://saaqebs.com/search" />
+      <meta property="twitter:title" content="Safer Google" />
+      <meta property="twitter:description" content={content} />
+      <meta property="twitter:image" content={logo} />
+
       <script src="./script/script.js"> </script>
-    </Helmet>
+    </MetaTags>
   );
 }
 

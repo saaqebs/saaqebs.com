@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/search" component={Search} />
-          <Redirect to="/" />
+          {/* <Redirect to="/" /> */}
         </Switch>
       </div>
     </BrowserRouter>
