@@ -4,30 +4,30 @@ import Helmet from 'react-helmet';
 import style from './styles/style.module.css';
 import google from './images/google.png';
 import propic from './images/propic.png';
-import logo from './images/logo.png';
+// import logo from './images/logo.png';
 
 const content = "When you normally use Google search, you send invasive ad information such as location and web browser data to Google. This website conducts a normal Google search query without sending any extra and invasive information!";
-
+const pic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/f9d3f892454bf3e07b37b2f90190ae485f2c5ae4/src/pages/safe-google/images/logo.png";
 
 function Head(props) {
   return (
     <Helmet>
       {/* Primary Meta Tags */}
       <title>Safer Google</title>
-      <meta name="title" content="Safer Google" />
-      <meta name="description" content={content} />
+      <meta name="title"        content="Safer Google" />
+      <meta name="description"  content={content} />
 
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://saaqebs.com/search" />
+      {/* <meta property="og:url" content="https://saaqebs.com/search" />
       <meta property="og:title" content="Safer Google" />
-      <meta property="og:description" content={content} />
+      <meta property="og:image"         content={pic} />
+      <meta property="og:description" content={content} /> */}
 
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://saaqebs.com/search" />
+      {/* <meta property="twitter:url" content="https://saaqebs.com/search" />
       <meta property="twitter:title" content="Safer Google" />
-      <meta property="twitter:description" content={content} />
+      <meta property="og:image"         content={pic} />
+      <meta property="twitter:description" content={content} /> */}
 
       <script src="./script/script.js"> </script>
     </Helmet>

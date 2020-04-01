@@ -7,7 +7,7 @@
         "type": "image/webp"
       }],
   "scope": "/",
-  "start_url": "/",
+  "start_url": ".",
   "display": "fullscreen",
   "orientation": "landscape"
 }
