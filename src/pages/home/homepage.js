@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MetaTags from 'react-meta-tags';
+import Helmet from 'react-helmet';
 
 import styles from './homepage.module.css';
 
@@ -10,15 +10,15 @@ import ProjectsPage from './projects/projects';
 import Contact from './contact/contact';
 
 const desc = "Saaqeb Siddiqi is a developer and designer studying at Cornell University. You can find more information about him including his portfolio here.";
-const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/45e321abaed408f87f1e99ecab7d2dd7b8d66d69/pic/intro.jpg"
+// const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/45e321abaed408f87f1e99ecab7d2dd7b8d66d69/pic/intro.jpg"
 
 function Head(props) {
   return (
-    <MetaTags>
+    <Helmet>
       {/* <!-- Primary Meta Tags --> */}
       <title>Saaqeb Siddiqi</title>
-      <meta name="title"        content="Saaqeb Siddiqi" />
-      <meta name="description"  content={desc} />
+      <meta name="title" content="Saaqeb Siddiqi" />
+      <meta name="description" content={desc} />
 
       {/* <!-- Open Graph / Facebook --> */}
       {/* <meta property="og:title"         content="Saaqeb Siddiqi" />
@@ -31,7 +31,7 @@ function Head(props) {
       <meta property="twitter:url"          content="https://saaqebs.com/" />
       <meta property="twitter:image"        content={propic} />
       <meta property="twitter:description"  content={desc} /> */}
-    </MetaTags>
+    </Helmet>
   );
 }
 
