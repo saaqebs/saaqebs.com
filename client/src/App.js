@@ -5,6 +5,7 @@ import './styles.css';    // import css file from scss
 
 import Homepage from './pages/home/homepage';
 import Search from './pages/safe-google/search';
+import Covid19 from './pages/covid19/covid19';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/search" component={Search} />
-          <Redirect to="/" />
+          <Route exact path="/covid19-nj" component={Covid19} />
+          {/* <Redirect to="/" /> */}
         </Switch>
       </div>
     </BrowserRouter>
