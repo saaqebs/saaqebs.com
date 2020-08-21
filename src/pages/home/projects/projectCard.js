@@ -16,14 +16,31 @@ class ProjectCard extends React.Component {
             <p className="card__text">
               {this.props.project.description}
             </p>
-            <a className="git_link" href={this.props.project.github}>
-              <button className="btn btn--block card__btn">
-                Github
-              </button>
-            </a>
+           <Buttons buttons={this.props.project.buttons} />
           </div>
         </div>
       </li>
+    );
+  }
+}
+
+
+class Buttons extends React.Component {
+  render () {
+    return (
+      <ul className="card__buttons">
+
+        {this.props.buttons.map((button) =>
+          <li> 
+            <a className="git_link" href={button.link}>
+              <button className="btn btn--block card__btn">
+                {button.name}
+              </button>
+            </a>
+          </li>
+        )}
+
+      </ul>
     );
   }
 }

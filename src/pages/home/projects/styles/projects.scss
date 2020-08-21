@@ -134,6 +134,17 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
   margin-bottom: 1.25rem;
 }
 
+.card__buttons {
+  display: flex;
+  list-style-type: none;
+  padding: 0 7% 0 7%;
+
+  li {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+}
+
 @media screen and (max-width: 1200px){
   .portfolio {
     width: 88%;
