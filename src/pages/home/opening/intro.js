@@ -15,9 +15,9 @@ class Intro extends Component {
 
             <div className={styles.info_second_container}>
               <p className="noselect">
-                Hello, my name is Saaqeb! I am a junior at
-                Cornell studying Information Science. I like
-                designing and analyzing all sorts of software applications.
+                Hello, my name is Saaqeb! I am a senior at
+                Cornell studying Information Science. I love 
+                creating cool software applications and analyzing big data.
                 Take a look at some of my projects below!
               </p>
 
