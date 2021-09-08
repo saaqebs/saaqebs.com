@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import './styles/sidebar.scss'
 
@@ -6,7 +6,7 @@ import linkedIn from './images/linkedin.png'
 import github from './images/github.png'
 import mail from './images/mail.png'
 
-class Sidebar extends Component {
+class Sidebar extends PureComponent {
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import './styles/contact.scss'
 
@@ -6,7 +6,7 @@ import linkedIn from './images/linkedin2.png'
 import github from './images/github2.png'
 import mail from './images/mail2.png'
 
-class ContactBar extends Component {
+class ContactBar extends PureComponent {
   render() {
     return (
       <div>

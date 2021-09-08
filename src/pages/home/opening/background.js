@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import styles from './styles/homepage.module.scss';
 import propic from './images/propic.png'
 
-class Background extends Component {
+class Background extends PureComponent {
 
   render() {
     return (

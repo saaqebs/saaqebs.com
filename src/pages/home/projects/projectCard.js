@@ -1,6 +1,6 @@
 import React from "react";
 
-class ProjectCard extends React.Component {
+class ProjectCard extends React.PureComponent {
   render() {
     // const image = this.props.project.image;
     // const image = require(this.props.project.image);

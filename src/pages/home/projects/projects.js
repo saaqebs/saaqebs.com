@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Projects from './projectCard.js'
 
 import projectList from './data/descriptions.js'
 
 import './styles/projects.scss'
 
-class ProjectsPage extends Component {
+class ProjectsPage extends PureComponent {
   render() {
     return (
       <div className="wrapper">

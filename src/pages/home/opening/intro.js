@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import styles from './styles/intro.module.scss';
 import buttonStyle from './styles/button.module.css';
 
-class Intro extends Component {
+class Intro extends PureComponent {
   render() {
     return (
       <div className={styles.container}>
