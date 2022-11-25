@@ -9,7 +9,7 @@ import Sidebar from './contact/sidebar';
 import ProjectsPage from './projects/projects';
 import Contact from './contact/contact';
 
-const desc = "Saaqeb Siddiqi is a developer and designer studying at Cornell University. You can find more information about him including his portfolio here.";
+const desc = "Saaqeb Siddiqi is a Software Engineer interested in machine learning. You can find more information about him including his portfolio here.";
 // const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/45e321abaed408f87f1e99ecab7d2dd7b8d66d69/pic/intro.jpg"
 
 function Head(props) {
