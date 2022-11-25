@@ -3,13 +3,13 @@
   z-index: 5;
   position: -webkit-sticky;
   position: sticky;
-  float: left;
-  left: 3vh;
+  float: right;
+  right: 5vh;
   width: 60px;
   height: 233px;
   background-color: white;
   text-align: center;
-  opacity: 0.6;
+  opacity: 0.8;
   filter: alpha(opacity=60); /* For IE8 and earlier */
 
   -moz-border-radius: 27px;

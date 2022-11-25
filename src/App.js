@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 import './styles.css';    // import css file from scss
 
@@ -10,11 +10,11 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/search" component={Search} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/search" element={<Search />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 
 import styles from './styles/homepage.module.scss';
-import propic from './images/propic.png'
+import greece_propic from './images/greece.png'
 
 class Background extends PureComponent {
 
@@ -9,7 +9,7 @@ class Background extends PureComponent {
     return (
       <div className={styles.homepage}>
         <div className={styles.propic}>
-          <img src={propic} alt="" />
+          <img src={greece_propic} alt="" />
         </div>
       </div>
     );

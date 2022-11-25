@@ -1,6 +1,6 @@
 
 .homepage{
-  background-image: url("../images/background.jpeg");
+  background-image: url("../images/turkiye.png");
   background-position: 10% 60%;
   background-position-x: 10%;
   background-position-y: 60%;
@@ -51,12 +51,13 @@
     background-position-x: 100%;
     background-position-y: 60%;
     background-image: none;
-    background-color: #e2e0d7;
+    background-color: rgba(207, 135, 119, 1);
   }
 }
 
 @media screen and (max-width:767px) {
   .propic {
+    top:5vh;
     visibility: visible;
     text-align: center;
     padding-top: 3vh;
