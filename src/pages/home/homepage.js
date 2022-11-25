@@ -10,7 +10,7 @@ import ProjectsPage from './projects/projects';
 import Contact from './contact/contact';
 
 const desc = "Saaqeb Siddiqi is a Software Engineer interested in machine learning. You can find more information about him including his portfolio here.";
-// const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/45e321abaed408f87f1e99ecab7d2dd7b8d66d69/pic/intro.jpg"
+// const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/d44120923561a485b8b9b09db74e6f9a74a3b173/public/pic/intro.jpeg"
 
 function Head(props) {
   return (
