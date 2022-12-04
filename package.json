@@ -1,6 +1,6 @@
 {
   "name": "saaqebs.com",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "homepage": "https://saaqebs.com",
   "private": true,
   "dependencies": {
@@ -16,8 +16,8 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "git add .; git commit -m \"deployment\"",
-    "deploy": "git push heroku master"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,5 +44,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/saaqebs/saaqebs.com/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

@@ -58,11 +58,6 @@ const projectList = [
         id: 0,
         name: "Github",
         link: "https://github.com/cathyli-j/tasteslikehome",
-      },
-      {
-        id: 1,
-        name: "app",
-        link: "https://tasteslikehome.herokuapp.com/",
       }
     ]
   }
