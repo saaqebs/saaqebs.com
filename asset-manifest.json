@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0222e318.css",
+    "main.js": "/static/js/main.7da205d8.js",
+    "static/media/tasteslikehome.png": "/static/media/tasteslikehome.5906908c3c5b64ed2f6a.png",
+    "static/media/turkiye.png": "/static/media/turkiye.4a09d220a39607bf69cd.png",
+    "static/media/search.jpeg": "/static/media/search.b448f747d23d1a23b118.jpeg",
+    "static/media/chess.jpeg": "/static/media/chess.b14688aef5246e83fff5.jpeg",
+    "static/media/github2.png": "/static/media/github2.1fc9e91e60fccdc203f1.png",
+    "static/media/safergoogle.png": "/static/media/safergoogle.506e2c79e8f70a256fe6.png",
+    "static/media/mail2.png": "/static/media/mail2.c4b5bb1be18e88768e27.png",
+    "static/media/greece.png": "/static/media/greece.c49d8326d687ae97bd29.png",
+    "static/media/propic.png": "/static/media/propic.bce4d091deadcb1e89c8.png",
+    "static/media/linkedin2.png": "/static/media/linkedin2.da1a4ef1eb8ca4091000.png",
+    "static/media/github.png": "/static/media/github.345dc4a21070f9083ca7.png",
+    "static/media/covid.jpg": "/static/media/covid.629305a4fcdfa3266125.jpg",
+    "static/media/google.png": "/static/media/google.5bfa7cdc1fb298ad212f.png",
+    "static/media/mail.png": "/static/media/mail.fce852ff747d3757e513.png",
+    "static/media/unsplash.png": "/static/media/unsplash.00fdc990688ba80d332c.png",
+    "static/media/tictactoe.jpg": "/static/media/tictactoe.ca82387c60b5935fb925.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.be7b2ea49987647fe2f8.png",
+    "index.html": "/index.html",
+    "main.0222e318.css.map": "/static/css/main.0222e318.css.map",
+    "main.7da205d8.js.map": "/static/js/main.7da205d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0222e318.css",
+    "static/js/main.7da205d8.js"
+  ]
+}
