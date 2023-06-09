@@ -27,12 +27,12 @@ const projectList = [
         id: 0,
         name: "Github",
         link: "https://github.com/saaqebs/safe-google"
-      },
-      {
-        id: 1,
-        name: "Link",
-        link: "/search"
       }
+      // {
+      //   id: 1,
+      //   name: "Link",
+      //   link: "/search"
+      // }
     ]
   },
   {
