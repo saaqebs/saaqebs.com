@@ -46,6 +46,6 @@
     "url": "https://github.com/saaqebs/saaqebs.com/issues"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
