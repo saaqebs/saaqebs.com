@@ -10,7 +10,7 @@ class ContactBar extends PureComponent {
   render() {
     return (
       <div>
-        <h2>Let's get in touch.</h2>
+        <h2 className='lable'>Let's get in touch.</h2>
         <div className="contact-bar">
           <span>
             <a href="https://www.linkedin.com/in/saaqeb/">
