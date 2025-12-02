@@ -17,93 +17,57 @@
 }
 
 .button_position {
-  left: 35%;
-  float: inherit;
+  left: 45%;
+  float: left;
   top: 12vh;
   z-index: 3;
 }
 
-#section03 a {
-  padding-top: 60px;
-}
-#section03 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 2.5px solid #ffffff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section03 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-#section03 a span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 0 0 0 rgb(252, 223, 223);
-  border-radius: 100%;
-  opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.5);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.2);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.demo {
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
 }
 
+.demo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font: normal 400 20px/1 "Josefin Sans", sans-serif;
+  font-weight: bold;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
 
-@media screen and (max-width:767px) {
-	.button_position {
-		right: 43vw;
-	  float: inherit;
-	  top: 10vh;
-	  z-index: 3;
-		/* display: none; */
-	}
+.demo a:hover {
+  opacity: 0.8;
+}
+
+/* Clean downward arrow */
+.demo a span {
+  display: block;
+  top: 43px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #ffffff;
+  filter: drop-shadow(0 0 6px #ffffff);
+  animation: bounceDown 1.6s infinite ease-in-out;
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
 }
