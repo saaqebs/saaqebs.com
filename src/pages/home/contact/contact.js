@@ -12,7 +12,7 @@ class Contact extends PureComponent {
       <section className="contact">
         <div className="contact-contain">
           {/* <ContactBar /> */}
-          <h2 className='lable'>Let's get in touch.</h2>
+          <h2 className='label'>Let's get in touch.</h2>
           <div className="contact-bar">
             <span>
               <a href="https://www.linkedin.com/in/saaqeb/">
