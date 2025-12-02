@@ -4,7 +4,7 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
 */
 
 .wrapper {
-  background-color: rgb(241, 232, 230);
+  background-color: rgb(16, 32, 52);
   z-index: 4;
   text-align: center;
   padding-bottom: 200px;
@@ -15,7 +15,7 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
   top: 96px;
   width: 1000px;
   left: 1.5%;
-  color: #696969;
+  color: #9e9e9e;
   font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -24,7 +24,6 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
 
   img {
     height: auto;
@@ -38,9 +37,8 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
 }
 
 .btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  //border-radius: 1rem;
+  // border: 1px solid #cccccc;
+  border-radius: 1rem;
   color: #696969;
   padding: 0.5rem;
   text-transform: lowercase;
@@ -76,17 +74,12 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
 }
 
 .card {
-  background-color: white;
+  background-color: black;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  // box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  &:hover {
-    .card__image {
-      filter: contrast(100%);
-    }
-  }
 }
 
 .card__content {
@@ -158,12 +151,6 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
   }
 }
 
-// @media screen and (width:375px) and (height:812px) {
-//   .portfolio {
-
-//   }
-// }
-
 .handiwork {
   font-size: 58px;
   font-weight: normal;
@@ -175,16 +162,6 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
   background-image: url('../images/chess.jpeg');
 }
 
-#search-engine {
-  background-image: url('../images/search.jpeg');
-  background-position: top center;
-}
-
 #tic-tac-toe {
   background-image: url('../images/tictactoe.jpg');
-}
-
-#unsplash {
-  background-image: url('../images/unsplash.png');
-  background-position: bottom center;
 }

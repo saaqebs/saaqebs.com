@@ -1,9 +1,9 @@
 const projectList = [
   {
     id: 0,
-    name: "Tracking & Exploring COVID-19 Data in New Jersey",
+    name: "Tracking COVID-19 Data in NJ",
     description: "A repository containing the ongoing data collection of COVID-19 cases per each municipality in New Jersey. Also included elementary forecasting and analysis!",
-    image: require("../images/covid.jpg"),
+    image: require("../images/covidnj.jpeg"),
     buttons: [
       {
         id: 0,
@@ -19,14 +19,14 @@ const projectList = [
   },
   {
     id: 1,
-    name: "Safer Google Search",
-    description: "A safer way to Google search that does not send invasive ad information about your device when searching. Protect yourself while browsing the web!",
-    image: require("../images/safergoogle.png"),
+    name: "Spotify Song Trends",
+    description: "This project applied machine learning techniques like K‑Nearest Neighbors to 160,000+ songs, achieving ~99% accuracy in predicting Spotify success.",
+    image: require("../images/spotify.png"),
     buttons: [
       {
         id: 0,
         name: "Github",
-        link: "https://github.com/saaqebs/safe-google"
+        link: "https://github.com/saaqebs/spotify-songs"
       }
       // {
       //   id: 1,

@@ -20,7 +20,7 @@ class Intro extends PureComponent {
               </p>
 
               <div className={buttonStyle.button_position}>
-                <section id={buttonStyle.section03} className={buttonStyle.demo}>
+                <section className={buttonStyle.demo}>
                   <a href="#portfolio" className="noselect"><span />Scroll</a>
                 </section>
               </div>

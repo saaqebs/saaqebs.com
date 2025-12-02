@@ -5,7 +5,7 @@
   // width: 830px;
   width: 65vw;
   margin: 0;
-  left: 7vw;
+  right: 6vw;
 
   position: absolute;
   top: 52.5%;
@@ -25,14 +25,14 @@
     h1 {
       font-size: 122px;
       font-weight: 200;
-      text-align: left;
+      text-align: right;
     }
 
     h2 {
       font-style: italic;
       font-size: 34px;
       font-weight: 300;
-      text-align: left;
+      text-align: right;
       // top: 3vh;
       top: 12px;
     }
@@ -40,7 +40,7 @@
     .info_container {
       // top: 6vh;
       top: 40px;
-      float: left;
+      float: right;
 
       .info_second_container {
         width: 640px;
@@ -48,7 +48,7 @@
 
         p {
           color: #ffffff;
-          text-align: left;
+          text-align: right;
           // font-family: Helvetica;
           font-weight: 400;
           font-size: 22px;
