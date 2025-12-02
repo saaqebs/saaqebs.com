@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 
 import './styles/contact.scss'
-import ContactBar from './contact_bar'
 import linkedIn from './images/linkedin2.png'
 import github from './images/github2.png'
 import mail from './images/mail2.png'
