@@ -13,6 +13,7 @@ class Contact extends PureComponent {
         <div className="contact-contain">
           {/* <ContactBar /> */}
           <h2 className='label'>Let's get in touch.</h2>
+          <p className="contact-sub">Fastest way to reach me is email. I read everything.</p>
           <div className="contact-bar">
             <span>
               <a href="https://www.linkedin.com/in/saaqeb/">

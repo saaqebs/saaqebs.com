@@ -32,7 +32,7 @@ class Buttons extends React.Component {
 
         {this.props.buttons.map((button) =>
           <li> 
-            <a className="git_link" href={button.link}>
+            <a className="git_link" href={button.link} target="_blank" rel="noopener noreferrer">
               <button className="btn btn--block card__btn">
                 {button.name}
               </button>

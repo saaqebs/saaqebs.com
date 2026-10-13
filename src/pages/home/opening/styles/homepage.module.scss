@@ -34,6 +34,10 @@
   visibility:hidden
 }
 
+.heroText {
+  display: none;
+}
+
 @media screen and (max-width:767px) {
   .homepage {
     background-attachment: scroll;
@@ -45,22 +49,50 @@
     position: relative;
     top: 0;
     bottom: 0;
-    height: 100vh;
+    height: auto;
+    flex: 1 1 auto;
+    min-height: 360px;
     width: 100%;
-    background-position: 100% 60%;
-    background-position-x: 100%;
-    background-position-y: 60%;
-    background-image: none;
-    // background-color: rgba(207, 135, 119, 1);
-    background-color: rgb(31, 61, 98);
+    background-image: linear-gradient(180deg, rgba(16, 32, 52, 0.12) 40%, rgba(16, 32, 52, 0.9) 100%), url("../images/cali.jpeg");
+    background-position: center, 22% 42%;
+    background-position-x: center, 22%;
+    background-position-y: center, 42%;
   }
-}
 
-@media screen and (max-width:767px) {
   .propic {
-    top:5vh;
-    visibility: visible;
-    text-align: center;
-    padding-top: 3vh;
+    display: none;
+  }
+
+  .heroText {
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 22px;
+    color: #ffffff;
+    z-index: 2;
+  }
+
+  .heroEyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #f0b35e;
+  }
+
+  .heroName {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.05;
+    margin-top: 6px;
+  }
+
+  .heroTagline {
+    font-size: 15.5px;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 7px;
+    color: #e8eef5;
   }
 }
