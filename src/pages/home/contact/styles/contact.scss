@@ -51,6 +51,62 @@
   font-size: 38px;
 }
 
+/* Mobile-remodel-only element: hidden on desktop */
+.contact-sub {
+  display: none;
+}
+
+/* ---- Mobile remodel (<=767px): structured contact section, desktop untouched ---- */
+@media screen and (max-width: 767px) {
+  .contact {
+    height: auto;
+    padding: 56px 20px 40px;
+  }
+
+  .contact-contain {
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    top: 0;
+  }
+
+  .label {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .contact-sub {
+    display: block;
+    color: #c9d6e4;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 8px;
+  }
+
+  .contact-bar {
+    height: auto;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+    span {
+      margin: 0 8px;
+      opacity: 1;
+    }
+
+    span a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+  }
+
+}
+
 @media screen and (max-width: 700px){
 
 }

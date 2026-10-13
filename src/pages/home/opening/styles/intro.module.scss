@@ -60,37 +60,45 @@
 
 @media screen and (max-width:767px) {
   .container {
-    width: 95vw;
-    position: absolute;
-    left: 50%;
-    // top: 50%;
-    transform: translate(-45%, -50%);
+    width: 100%;
+    position: static;
+    float: none;
+    right: auto;
+    transform: none;
+    background-color: #ffffff;
 
-    top: 60%;
+    .intro {
+      bottom: 0;
+      color: #33424f;
+      padding: 20px 20px 4px;
 
-      .intro {
-        bottom: 0;
+      /* Name and tagline are shown over the hero photo on mobile */
+      h1, h2 {
+        display: none;
+      }
 
-        h1,h2,p {
-          text-align: left;
-        }
-        h1 {
-          font-size: 13vw;
-        }
-        h2 {
-          font-size: 5.5vw;
-        }
-        .info_container {
-          text-align: left;
-          float: inherit;
-          .info_second_container {
-            width: 95%;
-            p {
-              text-align: left;
-              font-size: 2.55vh;
+      .info_container {
+        top: 0;
+        float: none;
+
+        .info_second_container {
+          width: 100%;
+          float: none;
+
+          p {
+            color: #33424f;
+            text-align: left;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.55;
+
+            /* Bio flows as one paragraph on mobile; no forced break */
+            br {
+              display: none;
             }
           }
         }
       }
     }
+  }
 }

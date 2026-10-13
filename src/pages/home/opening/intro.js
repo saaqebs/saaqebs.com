@@ -9,13 +9,13 @@ class Intro extends PureComponent {
       <div className={styles.container}>
         <div className={styles.intro}>
 
-          <h1> Saaqeb Siddiqi </h1>
+          <h1> Saaqeb </h1>
           <h2 className={styles.noselect}> Developer. Designer. Teacher. </h2>
           <div className={styles.info_container}>
 
             <div className={styles.info_second_container}>
               <p className="noselect">
-                Welcome! I love creating interactive software & analyzing data.<br></br>
+                Welcome! I love creating interactive software & analyzing data.{" "}<br></br>
                 Take a look at my projects below!
               </p>
 

@@ -11,6 +11,11 @@ class Background extends PureComponent {
         <div className={styles.propic}>
           <img src={greece_propic} alt="" />
         </div>
+        <div className={styles.heroText}>
+          <div className={styles.heroEyebrow}>Software Engineer</div>
+          <div className={styles.heroName}>Saaqeb</div>
+          <div className={styles.heroTagline}>Developer. Designer. Teacher.</div>
+        </div>
       </div>
     );
   }

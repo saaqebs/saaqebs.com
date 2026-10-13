@@ -165,3 +165,98 @@ Some CSS by Craig Anthony through Codepen: https://codepen.io/mcraiganthony/pen/
 #tic-tac-toe {
   background-image: url('../images/tictactoe.jpg');
 }
+
+/* ---- Mobile remodel (<=767px): light projects section, desktop untouched ---- */
+@media screen and (max-width: 767px) {
+  .wrapper {
+    background-color: #f6f7f9;
+    padding-bottom: 48px;
+  }
+
+  .handiwork {
+    color: #102034;
+    font-size: 26px;
+    top: 0;
+    margin: 0;
+    padding: 28px 20px 4px;
+    text-align: center;
+  }
+
+  .handiwork::before {
+    content: "Portfolio";
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #c07f2a;
+    margin-bottom: 6px;
+  }
+
+  .portfolio {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 16px 0;
+    top: 0;
+    left: 0;
+  }
+
+  .cards {
+    padding: 12px 0 0;
+  }
+
+  .cards__item {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(16, 32, 52, 0.08);
+  }
+
+  .card__image::before {
+    border-radius: 0;
+  }
+
+  .card__content {
+    padding: 16px;
+    text-align: left;
+  }
+
+  .card__title {
+    color: #102034;
+    font-size: 17px;
+  }
+
+  .card__text {
+    color: #5a6b7a;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Buttons: keep the original shape/layout, but fix what made them clash
+     on the white cards — the link underline only disappeared on :hover
+     (invisible on touch), and the unstyled native <button> showed the
+     default OS gray. Navy outline now matches the site palette. */
+  .git_link {
+    text-decoration: none;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: 1.5px solid #1f3d62;
+    color: #1f3d62;
+    font-family: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #1f3d62;
+    color: #ffffff;
+  }
+}
