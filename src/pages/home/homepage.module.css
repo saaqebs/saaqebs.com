@@ -9,7 +9,10 @@
     /* The front page fills the first screen exactly, like desktop:
        hero photo flexes, bio sits under it, projects start below the fold */
     height: auto;
-    min-height: 100svh;
+    /* Frozen px height set once by the script in index.html, so the front
+       page does not resize when mobile browser chrome shows/hides mid-scroll.
+       100svh is the fallback if that script has not run. */
+    min-height: var(--front-h, 100svh);
     width: 100%;
     display: flex;
     flex-direction: column;
