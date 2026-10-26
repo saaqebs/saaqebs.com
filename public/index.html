@@ -34,6 +34,27 @@
   <meta property="twitter:image"        content="https://raw.githubusercontent.com/saaqebs/saaqebs.com/d44120923561a485b8b9b09db74e6f9a74a3b173/public/pic/intro.jpeg">
   <meta property="twitter:description"  content="Saaqeb is a Software Engineer interested in machine learning. You can find more information about him including his portfolio here.">
 
+  <script>
+    // Freeze the mobile front-page height (--front-h) to the viewport height
+    // measured once at load. Mobile browsers resize the viewport when their
+    // navigation bars show/hide during scroll, which made the hero photo
+    // resize mid-scroll. Re-measure only when the width changes (rotation),
+    // never on height-only changes (browser chrome showing/hiding).
+    (function () {
+      var w = window.innerWidth;
+      function setFrontH() {
+        document.documentElement.style.setProperty('--front-h', window.innerHeight + 'px');
+      }
+      setFrontH();
+      window.addEventListener('resize', function () {
+        if (window.innerWidth !== w) {
+          w = window.innerWidth;
+          setFrontH();
+        }
+      });
+      window.addEventListener('orientationchange', setFrontH);
+    })();
+  </script>
 </head>
 
 <body>
