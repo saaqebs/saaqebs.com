@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 
 import './styles/sidebar.scss'
 
-import linkedIn from './images/linkedin.png'
-import github from './images/github.png'
-import mail from './images/mail.png'
+import linkedIn from './images/linkedin2.png'
+import github from './images/github2.png'
+import mail from './images/mail2.png'
 
 class Sidebar extends PureComponent {
 

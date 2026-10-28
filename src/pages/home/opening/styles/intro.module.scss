@@ -22,9 +22,20 @@
       margin: 0px;
     }
 
+    .eyebrow {
+      color: #f0b35e;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
     h1 {
       font-size: 122px;
       font-weight: 200;
+      letter-spacing: -1.5px;
       text-align: right;
     }
 
@@ -51,7 +62,9 @@
           text-align: right;
           // font-family: Helvetica;
           font-weight: 400;
-          font-size: 22px;
+          font-size: 20px;
+          line-height: 1.55;
+          opacity: 0.95;
         }
       }
     }
@@ -74,6 +87,11 @@
 
       /* Name and tagline are shown over the hero photo on mobile */
       h1, h2 {
+        display: none;
+      }
+
+      /* The hero photo carries its own eyebrow on mobile */
+      .eyebrow {
         display: none;
       }
 
