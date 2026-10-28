@@ -2,10 +2,10 @@
 .homepage{
   /* Soft scrim on the text side of the hero so the white headline reads
      cleanly over the bright photo (desktop; mobile sets its own layers) */
-  background-image: linear-gradient(90deg, rgba(16, 32, 52, 0) 52%, rgba(16, 32, 52, 0.30) 100%), url("../images/cali.jpeg");
-  background-position: 10% 60%;
-  background-position-x: 10%;
-  background-position-y: 60%;
+  background-image: linear-gradient(90deg, rgba(16, 32, 52, 0) 52%, rgba(16, 32, 52, 0.30) 100%), url("../images/hero-desktop.jpg");
+  background-position: center;
+  background-position-x: center;
+  background-position-y: center;
   // background-attachment: scroll;
   // background-size: cover;
   // -webkit-background-size: cover;
@@ -55,10 +55,10 @@
     flex: 1 1 auto;
     min-height: 360px;
     width: 100%;
-    background-image: linear-gradient(180deg, rgba(16, 32, 52, 0.12) 40%, rgba(16, 32, 52, 0.9) 100%), url("../images/cali.jpeg");
-    background-position: center, 22% 42%;
-    background-position-x: center, 22%;
-    background-position-y: center, 42%;
+    background-image: linear-gradient(180deg, rgba(16, 32, 52, 0.12) 40%, rgba(16, 32, 52, 0.9) 100%), url("../images/hero-mobile.jpg");
+    background-position: center, 32% 50%;
+    background-position-x: center, 32%;
+    background-position-y: center, 50%;
   }
 
   .propic {
