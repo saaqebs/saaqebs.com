@@ -8,7 +8,9 @@
   right: 6vw;
 
   position: absolute;
-  top: 52.5%;
+  /* Lowered from 52.5% (Saaqeb's pick, Oct 29, 2026) so the amber eyebrow
+     lands on the darker ridge band of the hero photo instead of the peak */
+  top: 60%;
   transform: translateY(-50%);
 
   .intro {
