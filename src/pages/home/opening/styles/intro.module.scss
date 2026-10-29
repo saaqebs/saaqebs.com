@@ -8,7 +8,9 @@
   right: 6vw;
 
   position: absolute;
-  top: 52.5%;
+  /* Lowered from 52.5% (Saaqeb's pick, Oct 29, 2026) so the amber eyebrow
+     lands on the darker ridge band of the hero photo instead of the peak */
+  top: 60%;
   transform: translateY(-50%);
 
   .intro {
@@ -22,10 +24,24 @@
       margin: 0px;
     }
 
+    .eyebrow {
+      color: #f0b35e;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      text-align: right;
+      margin-bottom: 20px;
+      /* Soft dark halo so the amber stays legible over bright parts of the photo */
+      text-shadow: 0 1px 10px rgba(10, 24, 40, 0.55), 0 0 3px rgba(10, 24, 40, 0.45);
+    }
+
     h1 {
       font-size: 122px;
       font-weight: 200;
+      letter-spacing: -1.5px;
       text-align: right;
+      text-shadow: 0 2px 22px rgba(10, 24, 40, 0.30);
     }
 
     h2 {
@@ -33,6 +49,7 @@
       font-size: 34px;
       font-weight: 300;
       text-align: right;
+      text-shadow: 0 1px 12px rgba(10, 24, 40, 0.35);
       // top: 3vh;
       top: 12px;
     }
@@ -51,7 +68,10 @@
           text-align: right;
           // font-family: Helvetica;
           font-weight: 400;
-          font-size: 22px;
+          font-size: 20px;
+          line-height: 1.55;
+          opacity: 0.95;
+          text-shadow: 0 1px 10px rgba(10, 24, 40, 0.35);
         }
       }
     }
@@ -77,6 +97,11 @@
         display: none;
       }
 
+      /* The hero photo carries its own eyebrow on mobile */
+      .eyebrow {
+        display: none;
+      }
+
       .info_container {
         top: 0;
         float: none;
@@ -91,6 +116,8 @@
             font-weight: 400;
             font-size: 15px;
             line-height: 1.55;
+            opacity: 1;
+            text-shadow: none;
 
             /* Bio flows as one paragraph on mobile; no forced break */
             br {

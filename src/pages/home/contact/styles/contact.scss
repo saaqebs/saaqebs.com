@@ -114,3 +114,59 @@
 @media screen and (max-width: 343px){
 
 }
+
+/* ---- Desktop redesign (>=768px): same navy anchor as mobile, with real
+   proportions (the 297px container and 70vh void are gone). Mobile untouched. ---- */
+@media screen and (min-width: 768px) {
+  .contact {
+    height: auto;
+    padding: 110px 0 120px;
+  }
+
+  .contact-contain {
+    width: 640px;
+    max-width: 90%;
+    top: 0;
+  }
+
+  .label {
+    font-size: 46px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+  }
+
+  .contact-sub {
+    display: block;
+    color: #c9d6e4;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 36px;
+  }
+
+  .contact-bar {
+    height: auto;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-bar span {
+    margin: 0 18px;
+    opacity: 0.92;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .contact-bar span:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  .contact-bar img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+}
