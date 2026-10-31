@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.12fc193d.css",
+    "main.css": "/static/css/main.e2e9b8ee.css",
     "main.js": "/static/js/main.874d8aaa.js",
     "static/media/tasteslikehome.png": "/static/media/tasteslikehome.5906908c3c5b64ed2f6a.png",
     "static/media/hero-desktop.jpg": "/static/media/hero-desktop.9251b71cb27e48b489aa.jpg",
-    "static/media/hero-mobile.jpg": "/static/media/hero-mobile.b47f28c6ab3f79938606.jpg",
+    "static/media/hero-mobile.jpg": "/static/media/hero-mobile.7b253dfb7be4e480f505.jpg",
     "static/media/chess.jpeg": "/static/media/chess.b14688aef5246e83fff5.jpeg",
     "static/media/github2.png": "/static/media/github2.1fc9e91e60fccdc203f1.png",
     "static/media/mail2.png": "/static/media/mail2.c4b5bb1be18e88768e27.png",
@@ -16,11 +16,11 @@
     "static/media/spotify.png": "/static/media/spotify.2aa58f5f5d8cf221e32c.png",
     "static/media/tictactoe.jpg": "/static/media/tictactoe.ca82387c60b5935fb925.jpg",
     "index.html": "/index.html",
-    "main.12fc193d.css.map": "/static/css/main.12fc193d.css.map",
+    "main.e2e9b8ee.css.map": "/static/css/main.e2e9b8ee.css.map",
     "main.874d8aaa.js.map": "/static/js/main.874d8aaa.js.map"
   },
   "entrypoints": [
-    "static/css/main.12fc193d.css",
+    "static/css/main.e2e9b8ee.css",
     "static/js/main.874d8aaa.js"
   ]
 }
