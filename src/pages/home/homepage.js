@@ -35,15 +35,6 @@ function Head(props) {
   );
 }
 
-function About() {
-  return (
-    <section aria-label="About" style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 20px' }}>
-      <h2>About</h2>
-      <p>Saaqeb Siddiqi is a software engineer at Meta in the United States. He works on AI at Meta. Previously, he worked at Microsoft. He studied at Cornell University.</p>
-    </section>
-  );
-}
-
 class Homepage extends Component {
   render() {
     return (
@@ -55,7 +46,6 @@ class Homepage extends Component {
             <Intro />
             <Background />
           </div>
-          <About />
           <ProjectsPage />
         </div>
         <div>
