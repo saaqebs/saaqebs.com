@@ -16,8 +16,8 @@ function Head(props) {
   return (
     <Helmet>
       {/* <!-- Primary Meta Tags --> */}
-      <title>Saaqeb Siddiqi | Software Engineer at Meta</title>
-      <meta name="title" content="Saaqeb Siddiqi | Software Engineer at Meta" />
+      <title>Saaqeb | Software Engineer at Meta</title>
+      <meta name="title" content="Saaqeb | Software Engineer at Meta" />
       <meta name="description" content={desc} />
 
       {/* <!-- Open Graph / Facebook --> */}
