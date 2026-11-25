@@ -1,5 +1,5 @@
 # Saaqeb Siddiqi
-> Saaqeb Siddiqi is a software engineer at Meta in Seattle, working on reinforcement learning and multilingual AI agent evaluation. Previously at Microsoft, Peloton, and Lyft. BS in Information Science from Cornell.
+> Saaqeb Siddiqi is a software engineer at Meta in the United States. He works on AI at Meta. Previously at Microsoft. Studied at Cornell.
 - [Saaqeb Siddiqi](https://saaqebs.com/): personal site and portfolio
 - [GitHub](https://github.com/saaqebs)
 - [LinkedIn](https://www.linkedin.com/in/saaqeb)
