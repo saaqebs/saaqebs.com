@@ -9,7 +9,7 @@ import Sidebar from './contact/sidebar';
 import ProjectsPage from './projects/projects';
 import Contact from './contact/contact';
 
-const desc = "Saaqeb Siddiqi is a software engineer at Meta in Seattle, working on reinforcement learning and multilingual AI agent evaluation. Previously at Microsoft, Peloton, and Lyft. BS in Information Science from Cornell.";
+const desc = "Saaqeb Siddiqi is a software engineer at Meta in the United States. He works on AI at Meta. Previously at Microsoft. Studied at Cornell.";
 // const propic = "https://raw.githubusercontent.com/saaqebs/saaqebs.com/d44120923561a485b8b9b09db74e6f9a74a3b173/public/pic/intro.jpeg"
 
 function Head(props) {
@@ -39,7 +39,7 @@ function About() {
   return (
     <section aria-label="About" style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 20px' }}>
       <h2>About</h2>
-      <p>Saaqeb Siddiqi is a software engineer at Meta in Seattle. He works in Applied AI on reinforcement learning and multilingual AI agent evaluation. Before Meta, he worked at Microsoft, Peloton, and Lyft. He studied Information Science and Computer Science at Cornell University.</p>
+      <p>Saaqeb Siddiqi is a software engineer at Meta in the United States. He works on AI at Meta. Previously, he worked at Microsoft. He studied at Cornell University.</p>
     </section>
   );
 }
